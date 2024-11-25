@@ -4,19 +4,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Planet</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/planet.js" defer></script>
+    <link rel="stylesheet" href="/styles/planet.css">
+    <script src="/scripts/planet.js" defer></script>
 </head>
 <body>
     <div id="wrapper">
-        <header>
-            <h1 id="planet-name"></h1>
-        </header>
-        <main>
-            <h2 id="planet-faction"></h2>
-            <h2 id="planet-boss"></h2>
-            <p id="planet-description"></p>
-        </main>
+        <div id="planet">
+            <div id="planet-info">
+                <h1 id="planet-name"></h1>
+                <p id="planet-description"></p>
+            </div>
+            <div id="planet-enemies">
+                <img id="planet-image">
+                <h4>Information</h4>
+                <div class="planet-stats">
+                    <h5 id="faction">Ruling Faction</h5>
+                    <h5 id="planet-faction"></h6>
+                </div>
+                <br>
+                <div class="planet-stats">
+                    <h5 id="planet-boss"></h5>
+                    <h5 id="boss">Planet Boss</h6>
+                </div>
+            </div>
+        </div>
+        <div id="missions">
+            <h2>Missions</h2>
+        </div>
     </div>
 </body>
 </html>

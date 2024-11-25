@@ -12,13 +12,73 @@
         </header>
         <body>
             <div id="new-warframe">
-                <form>
+                <h2>Add Warframe</h2>
+                <form method="post">
+                    <label for="name">Waframe Name:</label>
+                    <input type="text" id="name" name="name"><br>
 
+                    <!--Warfames are only programmed with two genders-->
+                    <label for="gender">Waframe Gender:</label>
+                    <input type="radio" id="male" name="gender" value="Male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="Female">
+                    <label for="female">Female</label>
+
+                    <label for="description">Waframe Description:</label>
+                    <input type="textarea" id="description" name="description"><br>
+
+                    <label for="image">Waframe Image:</label>
+                    <input type="text" id="image" name="image"><br>
+
+                    <button type="button" id="add-warframe" value="Add Warframe"></button>
                 </form>
             </div>
             <div id="new-planet">
-                <form>
+                <h2>Add Planet</h2>
+                <form method="post">
+                    <label for="name">Planet Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    
+                    <label for="faction">Planet Faction:</label>
+                    <input type="text" id="faction" name="faction"><br>
+                    
+                    <label for="description">Planet Descripton:</label>
+                    <input type="textarea" id="description" name="description"><br>
 
+                    <label for="boss">Planet Boss:</label>
+                    <input type="text" id="boss" name="boss"><br>
+
+                    <label for="image">Planet Image:</label>
+                    <input type="text" id="image" name="image"><br>
+
+                    <button type="button" id="add-planet" value="Add Planet"></button>
+                </form>
+            </div>
+            <div id="new-mission">
+                <h2>Add Mission</h2>
+                <form method="post">
+                    <label for="name">Mission Name:</label>
+                    <input type="text" id="name" name="name"><br>
+                    
+                    <label for="planet">Mission Planet:</label>
+                    <input type="text" id="planet" name="planet"><br>
+                    
+                    <label for="target">Mission Target:</label>
+                    <input type="text" id="target" name="target"><br>
+                    
+                    <label for="type">Mission Type:</label>
+                    <input type="text" id="type" name="type"><br>
+
+                    <label for="level">Mission Level:</label>
+                    <input type="text" id="level" name="level"><br>
+                    
+                    <label for="credits">Mission Credits Reward:</label>
+                    <input type="text" id="credits" name="credits"><br>
+                    
+                    <label for="tileset">Mission Tileset:</label>
+                    <input type="text" id="tileset" name="tileset"><br>
+                    
+                    <button type="button" id="add-planet" value="Add Planet"></button>
                 </form>
             </div>
         </body>
