@@ -1,0 +1,41 @@
+### Variables
+@url = http://localhost:3000/
+@api = http://localhost:3000/api/v1/
+
+### Webpage
+GET {{url}}
+
+### Get Warframes
+GET {{api}}warframes
+
+### Get Planets
+GET {{api}}planets
+
+### Get Warframe by name
+GET {{api}}warframes/ash
+
+### Get Planet by name
+GET {{api}}planets/earth
+
+### Add a Warframe
+POST {{api}}warframes
+Content-Type: application/json
+
+{
+    "name": "Volt",
+    "gender": "Male",
+    "description": "Volt's arsenal is powerful and electrifying. Handle with care, Tenno.",
+    "image": "https://raw.githubusercontent.com/nhansen462/warframe-images/refs/heads/main/Volt.webp"
+}
+
+
+### Add a Planet
+POST {{api}}planets
+Content-Type: application/json
+
+{
+    "name": "Pluto",
+    "faction": "Corpus",
+    "description": "Pluto is small and cold, and organic tissue does not fare well in its extreme climate. But the merchant spacemen always seek opportunity for profit in regions where others dare not travel. Robotic proxies act as security in the largely un-manned manufacturing facilities that operate in the area.",
+    "boss": "Ambulas"
+}
