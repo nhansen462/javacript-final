@@ -1,6 +1,6 @@
 const router = require('express').Router()
 const path = require('path')
-const root = path.join(__dirname, '..', 'public')
+const root = path.join(__dirname, '../..', 'public')
 
 router.get('/', (__, response) => {
     response.sendFile('index.html', {root})
@@ -11,7 +11,7 @@ router.get('/planets/:name', (__, response) => {
 })
 
 router.get('/admin', (__, response) => {
-    response.sendFile('index.html', {root})
+    response.sendFile('admin.html', {root})
 })
 
 module.exports = router
