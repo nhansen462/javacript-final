@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/admin.js" defer></script>
 </head>
 <body>
     <div id="wrapper">
@@ -22,7 +24,7 @@
                     <input type="radio" id="male" name="gender" value="Male">
                     <label for="male">Male</label>
                     <input type="radio" id="female" name="gender" value="Female">
-                    <label for="female">Female</label>
+                    <label for="female">Female</label><br>
 
                     <label for="description">Waframe Description:</label>
                     <input type="textarea" id="description" name="description"><br>
@@ -68,15 +70,6 @@
                     
                     <label for="type">Mission Type:</label>
                     <input type="text" id="type" name="type"><br>
-
-                    <label for="level">Mission Level:</label>
-                    <input type="text" id="level" name="level"><br>
-                    
-                    <label for="credits">Mission Credits Reward:</label>
-                    <input type="text" id="credits" name="credits"><br>
-                    
-                    <label for="tileset">Mission Tileset:</label>
-                    <input type="text" id="tileset" name="tileset"><br>
                     
                     <button type="button" id="add-planet" value="Add Planet"></button>
                 </form>

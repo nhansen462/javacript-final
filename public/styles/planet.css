@@ -30,6 +30,16 @@ nav {
     padding: 10px;
 }
 
+table {
+    margin: auto;
+    border: 1px solid;
+}
+
+td, th {
+    border: 1px solid;
+    width: 20%;
+}
+
 a {
 
 }
@@ -119,6 +129,7 @@ a {
 #mission {
     float: none;
     width: 100%;
+    text-align: center;
 }
 
 #wrapper {
