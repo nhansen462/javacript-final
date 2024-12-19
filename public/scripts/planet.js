@@ -23,8 +23,6 @@ const displayPlanet = async () => {
 
     const missionsFetch = await fetch('/api/v1/missions/' + name.toLowerCase())
     const missions = await missionsFetch.json()
-    console.log('/api/v1/missions/' + name.toLowerCase())
-    console.log(missions)
     
     missions.forEach(mission => {
         displayMission(mission)

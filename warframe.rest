@@ -12,10 +12,10 @@ GET {{api}}warframes
 GET {{api}}planets
 
 ### Get Warframe by name
-GET {{api}}warframes/ash
+GET {{api}}warframes/rhino
 
 ### Get Planet by name
-GET {{api}}planets/earth
+GET {{api}}planets/mars
 
 ### Add a Warframe
 POST {{api}}warframes
@@ -37,7 +37,7 @@ Content-Type: application/json
     "name": "Pluto",
     "faction": "Corpus",
     "description": "Pluto is small and cold, and organic tissue does not fare well in its extreme climate. But the merchant spacemen always seek opportunity for profit in regions where others dare not travel. Robotic proxies act as security in the largely un-manned manufacturing facilities that operate in the area.",
-    "boss": "Ambulas"
+    "boss": "Ambulas",
     "image": "https://raw.githubusercontent.com/nhansen462/warframe-images/refs/heads/main/Pluto.webp"
 }
 
@@ -47,8 +47,8 @@ POST {{api}}missions
 Content-Type: application/json
 
 {
-    "name": "Mantle"
-    "target": "Grineer"
-    "type": "Capture"
+    "name": "Mantle",
+    "target": "Grineer",
+    "type": "Capture",
     "planet": "Earth"
 }

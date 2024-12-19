@@ -51,9 +51,9 @@ router.post('/warframes', async (request, response) => {
 })
 
 router.post('/planets', async (request, response) => {
-    const {name, faction, description, boss} = request.body
+    const {name, faction, description, boss, image} = request.body
     const collection = await getPlanets()
-    const {acknowledged, insertedID} = await collection.insertOne({name, faction, description, boss})
+    const {acknowledged, insertedID} = await collection.insertOne({name, faction, description, boss, image})
     response.send({acknowledged, insertedID})
 })
 
